@@ -104,3 +104,6 @@ release/
 # Temporary files
 tmp/
 temp/
+
+# package-lock
+package-lock.json
