@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Electron + React + Fluent UI v9 Desktop Boilerplate" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Electron React Fluent App</title>
+    <style>
+        /* Loading spinner */
+        .loading-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #f3f2f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #e1dfdd;
+            border-top: 4px solid #0078d4;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Hide loading when app is ready */
+        .app-ready .loading-container {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <noscript>Bu uygulamayı çalıştırmak için JavaScript'i etkinleştirmeniz gerekiyor.</noscript>
+    <div id="root">
+        <div class="loading-container">
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+    
+    <script>
+        // App yüklendiğinde loading'i gizle
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.body.classList.add('app-ready');
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
