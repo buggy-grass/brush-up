@@ -2,13 +2,16 @@
 <html lang="tr">
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/icon-16.svg" />
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/icon-16.svg" />
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="/icon-32.svg" />
+    <link rel="icon" type="image/svg+xml" sizes="192x192" href="/icon-192.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Electron + React + Fluent UI v9 Desktop Boilerplate" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>Electron React Fluent App</title>
+    <meta name="description" content="Brush Paint - Yaratıcı Desktop Uygulaması" />
+    <link rel="apple-touch-icon" href="/icon-192.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Brush Paint - Yaratıcı Desktop Uygulaması</title>
     <style>
         /* Loading spinner */
         .loading-container {
@@ -46,19 +49,6 @@
 </head>
 <body>
     <noscript>Bu uygulamayı çalıştırmak için JavaScript'i etkinleştirmeniz gerekiyor.</noscript>
-    <div id="root">
-        <div class="loading-container">
-            <div class="loading-spinner"></div>
-        </div>
-    </div>
-    
-    <script>
-        // App yüklendiğinde loading'i gizle
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                document.body.classList.add('app-ready');
-            }, 1000);
-        });
-    </script>
+    <div id="root"></div>
 </body>
 </html>

@@ -1,0 +1,75 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fırça sapı -->
+  <path d="M20 8 L20 45 C20 47.2091 21.7909 49 24 49 C26.2091 49 28 47.2091 28 45 L28 8" 
+        fill="#8B4513" stroke="#654321" stroke-width="1"/>
+  
+  <!-- Fırça metal bandı -->
+  <rect x="18" y="42" width="12" height="4" fill="#C0C0C0" stroke="#A0A0A0" stroke-width="0.5"/>
+  
+  <!-- Fırça kılları -->
+  <g>
+    <!-- Ana kıl grubu -->
+    <path d="M22 46 Q20 52 18 58 Q16 60 20 60 Q24 58 26 52 Q28 50 26 46" 
+          fill="#2C3E50" opacity="0.8"/>
+    <path d="M24 46 Q22 52 20 58 Q18 60 22 60 Q26 58 28 52 Q30 50 28 46" 
+          fill="#34495E" opacity="0.7"/>
+    <path d="M26 46 Q24 52 22 58 Q20 60 24 60 Q28 58 30 52 Q32 50 30 46" 
+          fill="#2C3E50" opacity="0.6"/>
+    
+    <!-- Yan kıllar -->
+    <path d="M20 46 Q18 50 16 54 Q14 56 18 56 Q22 54 24 50 Q26 48 24 46" 
+          fill="#34495E" opacity="0.5"/>
+    <path d="M28 46 Q30 50 32 54 Q34 56 30 56 Q26 54 24 50 Q22 48 24 46" 
+          fill="#2C3E50" opacity="0.5"/>
+  </g>
+  
+  <!-- Boya damlaları -->
+  <g>
+    <!-- Mavi damla -->
+    <ellipse cx="35" cy="25" rx="3" ry="4" fill="#3498DB" opacity="0.8"/>
+    <ellipse cx="35" cy="23" rx="2" ry="2.5" fill="#5DADE2" opacity="0.9"/>
+    
+    <!-- Kırmızı damla -->
+    <ellipse cx="40" cy="30" rx="2.5" ry="3.5" fill="#E74C3C" opacity="0.8"/>
+    <ellipse cx="40" cy="28" rx="1.5" ry="2" fill="#EC7063" opacity="0.9"/>
+    
+    <!-- Sarı damla -->
+    <ellipse cx="45" cy="20" rx="2" ry="3" fill="#F1C40F" opacity="0.8"/>
+    <ellipse cx="45" cy="18" rx="1.5" ry="2" fill="#F7DC6F" opacity="0.9"/>
+    
+    <!-- Yeşil damla -->
+    <ellipse cx="50" cy="28" rx="2.5" ry="3" fill="#27AE60" opacity="0.8"/>
+    <ellipse cx="50" cy="26" rx="1.5" ry="2" fill="#58D68D" opacity="0.9"/>
+  </g>
+  
+  <!-- Yaratıcılık sembolleri -->
+  <g>
+    <!-- Yıldız -->
+    <path d="M45 8 L46.5 12 L51 12 L47.5 15 L49 19 L45 16 L41 19 L42.5 15 L39 12 L43.5 12 Z" 
+          fill="#F39C12" opacity="0.7"/>
+    
+    <!-- Kalp -->
+    <path d="M35 8 C35 6 33 4 31 4 C29 4 27 6 27 8 C27 10 31 14 31 14 C31 14 35 10 35 8 Z" 
+          fill="#E91E63" opacity="0.6"/>
+    
+    <!-- Işık ampulü -->
+    <ellipse cx="55" cy="12" rx="3" ry="4" fill="#F1C40F" opacity="0.8"/>
+    <rect x="53" y="16" width="4" height="2" fill="#D4AC0D" opacity="0.7"/>
+    <path d="M54 18 Q55 20 56 18" stroke="#D4AC0D" stroke-width="1" fill="none" opacity="0.7"/>
+  </g>
+  
+  <!-- Fırça darbeleri (yaratıcılık izleri) -->
+  <g opacity="0.4">
+    <path d="M15 35 Q25 30 35 35" stroke="#3498DB" stroke-width="2" fill="none"/>
+    <path d="M12 40 Q22 35 32 40" stroke="#E74C3C" stroke-width="2" fill="none"/>
+    <path d="M18 45 Q28 40 38 45" stroke="#F1C40F" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Parlama efektleri -->
+  <g opacity="0.3">
+    <circle cx="30" cy="15" r="1" fill="#FFFFFF"/>
+    <circle cx="35" cy="10" r="0.8" fill="#FFFFFF"/>
+    <circle cx="40" cy="18" r="0.6" fill="#FFFFFF"/>
+    <circle cx="25" cy="25" r="0.7" fill="#FFFFFF"/>
+  </g>
+</svg>

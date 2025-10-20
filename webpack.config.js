@@ -15,7 +15,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: isDevelopment ? '[name].js' : '[name].[contenthash].js',
     clean: true,
-    publicPath: './',
+    publicPath: '/',
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js'],

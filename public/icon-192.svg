@@ -1,0 +1,66 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fırça sapı -->
+  <path d="M60 24 L60 132 C60 138.627 65.373 144 72 144 C78.627 144 84 138.627 84 132 L84 24" 
+        fill="#8B4513" stroke="#654321" stroke-width="2.4"/>
+  
+  <!-- Fırça metal bandı -->
+  <rect x="54" y="126" width="36" height="12" fill="#C0C0C0" stroke="#A0A0A0" stroke-width="1.2"/>
+  
+  <!-- Fırça kılları -->
+  <g>
+    <path d="M66 138 Q60 156 54 174 Q48 180 60 180 Q72 174 78 156 Q84 150 78 138" 
+          fill="#2C3E50" opacity="0.8"/>
+    <path d="M72 138 Q66 156 60 174 Q54 180 66 180 Q78 174 84 156 Q90 150 84 138" 
+          fill="#34495E" opacity="0.7"/>
+    <path d="M78 138 Q72 156 66 174 Q60 180 72 180 Q84 174 90 156 Q96 150 90 138" 
+          fill="#2C3E50" opacity="0.6"/>
+    
+    <path d="M60 138 Q54 150 48 162 Q42 168 54 168 Q66 162 72 150 Q78 144 72 138" 
+          fill="#34495E" opacity="0.5"/>
+    <path d="M84 138 Q90 150 96 162 Q102 168 90 168 Q78 162 72 150 Q66 144 72 138" 
+          fill="#2C3E50" opacity="0.5"/>
+  </g>
+  
+  <!-- Boya damlaları -->
+  <g>
+    <ellipse cx="108" cy="72" rx="18" ry="24" fill="#3498DB" opacity="0.8"/>
+    <ellipse cx="108" cy="66" rx="12" ry="15" fill="#5DADE2" opacity="0.9"/>
+    
+    <ellipse cx="120" cy="90" rx="15" ry="21" fill="#E74C3C" opacity="0.8"/>
+    <ellipse cx="120" cy="84" rx="9" ry="12" fill="#EC7063" opacity="0.9"/>
+    
+    <ellipse cx="132" cy="60" rx="12" ry="18" fill="#F1C40F" opacity="0.8"/>
+    <ellipse cx="132" cy="54" rx="9" ry="12" fill="#F7DC6F" opacity="0.9"/>
+    
+    <ellipse cx="144" cy="84" rx="15" ry="18" fill="#27AE60" opacity="0.8"/>
+    <ellipse cx="144" cy="78" rx="9" ry="12" fill="#58D68D" opacity="0.9"/>
+  </g>
+  
+  <!-- Yaratıcılık sembolleri -->
+  <g>
+    <path d="M132 24 L135 36 L144 36 L138 42 L141 54 L132 48 L123 54 L126 42 L120 36 L129 36 Z" 
+          fill="#F39C12" opacity="0.7"/>
+    
+    <path d="M108 24 C108 18 102 12 96 12 C90 12 84 18 84 24 C84 30 96 42 96 42 C96 42 108 30 108 24 Z" 
+          fill="#E91E63" opacity="0.6"/>
+    
+    <ellipse cx="156" cy="36" rx="18" ry="24" fill="#F1C40F" opacity="0.8"/>
+    <rect x="150" y="60" width="12" height="6" fill="#D4AC0D" opacity="0.7"/>
+    <path d="M153 66 Q156 72 159 66" stroke="#D4AC0D" stroke-width="3" fill="none" opacity="0.7"/>
+  </g>
+  
+  <!-- Fırça darbeleri -->
+  <g opacity="0.4">
+    <path d="M45 105 Q75 90 105 105" stroke="#3498DB" stroke-width="6" fill="none"/>
+    <path d="M36 120 Q66 105 96 120" stroke="#E74C3C" stroke-width="6" fill="none"/>
+    <path d="M54 135 Q84 120 114 135" stroke="#F1C40F" stroke-width="6" fill="none"/>
+  </g>
+  
+  <!-- Parlama efektleri -->
+  <g opacity="0.3">
+    <circle cx="90" cy="45" r="3" fill="#FFFFFF"/>
+    <circle cx="105" cy="30" r="2.4" fill="#FFFFFF"/>
+    <circle cx="120" cy="54" r="1.8" fill="#FFFFFF"/>
+    <circle cx="75" cy="75" r="2.1" fill="#FFFFFF"/>
+  </g>
+</svg>

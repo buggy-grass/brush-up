@@ -25,14 +25,15 @@ const createWindow = (): void => {
     height: 800,
     minWidth: 800,
     minHeight: 600,
+    frame: false,
+    transparent: false,
+    icon: path.join(__dirname, '../../public/icon-32.svg'), // Uygulama icon'u
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
       preload: path.join(__dirname, 'preload.js'),
     },
-    titleBarStyle: 'hiddenInset',
     show: false,
-    icon: path.join(__dirname, '../assets/icon.png'),
   });
 
   // Pencere hazır olduğunda göster
@@ -44,10 +45,24 @@ const createWindow = (): void => {
     }
   });
 
+  // CSP ayarla - sadece production'da aktif
+  if (!isDev) {
+    mainWindow.webContents.session.webRequest.onHeadersReceived((details, callback) => {
+      callback({
+        responseHeaders: {
+          ...details.responseHeaders,
+          'Content-Security-Policy': [
+            "default-src 'self' 'unsafe-inline' data: blob:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self';"
+          ]
+        }
+      });
+    });
+  }
+
   // URL'yi yükle
   const startUrl = isDev 
     ? 'http://localhost:3001' 
-    : `file://${path.join(__dirname, '../index.html')}`;
+    : `file://${path.join(process.cwd(), 'public/index.html')}`;
   
   mainWindow.loadURL(startUrl);
 
@@ -75,7 +90,7 @@ app.whenReady().then(() => {
   });
 
   // Menü oluştur
-  createMenu();
+  // createMenu();
 });
 
 // Tüm pencereler kapatıldığında (macOS hariç)

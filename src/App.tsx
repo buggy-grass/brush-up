@@ -1,17 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { FluentProvider, webLightTheme, webDarkTheme } from '@fluentui/react-components';
-import { ThemeProvider, useTheme } from './contexts/ThemeContext';
+import { FluentProvider, webDarkTheme, webLightTheme } from '@fluentui/react-components';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Settings from './pages/Settings';
 import About from './pages/About';
+import CustomWindowTitleBar from './components/window/CustomWindowTitleBar';
 
-const AppContent: React.FC = () => {
-  const { theme } = useTheme();
-  
+const App: React.FC = () => {
   return (
-    <FluentProvider theme={theme === 'dark' ? webDarkTheme : webLightTheme}>
+    <FluentProvider theme={webDarkTheme}>
+      <CustomWindowTitleBar />
       <Router>
         <Layout>
           <Routes>
@@ -22,14 +21,6 @@ const AppContent: React.FC = () => {
         </Layout>
       </Router>
     </FluentProvider>
-  );
-};
-
-const App: React.FC = () => {
-  return (
-    <ThemeProvider>
-      <AppContent />
-    </ThemeProvider>
   );
 };
 
