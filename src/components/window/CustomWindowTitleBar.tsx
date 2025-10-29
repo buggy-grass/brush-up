@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Button, tokens } from "@fluentui/react-components";
+import { Button, Image, tokens } from "@fluentui/react-components";
 import { SubtractRegular, SquareRegular, DismissRegular } from "@fluentui/react-icons";
+import AppIcon from '../../assets/app-icon/favicon.png'
 
 const Titlebar: React.FC = () => {
   const [isMaximized, setIsMaximized] = useState(false);
@@ -36,12 +37,19 @@ const Titlebar: React.FC = () => {
         position: "relative",
       } as React.CSSProperties}
     >
-      <div style={{ 
+      <div style={{
+        display:"flex",
+        flexDirection:"row",
+        alignItems:"center",
         fontSize: tokens.fontSizeBase200,
         fontWeight: tokens.fontWeightSemibold,
         color: tokens.colorNeutralForeground1,
       }}>
-        Brush-Up
+        <Image src={AppIcon} style={{width:"20px", height:"20px", marginRight: "3px"}}/>Brush-Up
+      </div>
+
+      <div style={{display:"flex", minWidth: "300px", color: "#c5c5c5", justifyContent: "center", height: "20px", border: "1px solid #404040", borderRadius: "5px", paddingRight: "50px", paddingLeft: "50px"}}>
+        Project1.jpg
       </div>
       
       <div style={{ WebkitAppRegion: "no-drag", display: "flex" } as React.CSSProperties}>
