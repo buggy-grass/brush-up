@@ -35,3 +35,6 @@ if (fs.existsSync(path.join(mainPath, 'preload.js'))) {
 
 console.log('✅ Electron build tamamlandı!');
 console.log('🚀 Uygulamayı başlatmak için: npm run electron');
+
+
+

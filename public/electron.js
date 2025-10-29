@@ -101,3 +101,4 @@ app.on('web-contents-created', (event, contents) => {
     event.preventDefault();
   });
 });
+
