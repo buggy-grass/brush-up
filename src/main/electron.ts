@@ -16,6 +16,16 @@ interface ElectronAPI {
 }
 
 let mainWindow: BrowserWindow | null = null;
+
+// WebGL'i mümkün olduğunca etkinleştir, WebGPU'yu devre dışı bırak
+app.commandLine.appendSwitch('ignore-gpu-blocklist');
+app.commandLine.appendSwitch('enable-gpu-rasterization');
+app.commandLine.appendSwitch('enable-zero-copy');
+app.commandLine.appendSwitch('enable-accelerated-2d-canvas');
+// WebGPU'yu devre dışı bırak (Pixi.js WebGL kullanmalı)
+app.commandLine.appendSwitch('disable-webgpu');
+// Windows için ANGLE backend tercihi
+app.commandLine.appendSwitch('use-angle', 'd3d11');
 let isDarkMode = false;
 
 const createWindow = (): void => {

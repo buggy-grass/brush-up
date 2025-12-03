@@ -38,3 +38,6 @@ console.log('🚀 Uygulamayı başlatmak için: npm run electron');
 
 
 
+
+
+
