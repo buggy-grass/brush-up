@@ -33,15 +33,21 @@ const useStyles = makeStyles({
 });
 
 function ToolbarMenu() {
-    const styles = useStyles();
+  const styles = useStyles();
   return (
-    <Stack style={{ height: "40px", borderBottom: "1px solid #383838" }}>
+    <Stack
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        height: "40px",
+        borderBottom: "1px solid #383838",
+      }}
+    >
       <Stack.Item
         style={{
           display: "flex",
           flexDirection: "row",
           maxWidth: "100px",
-          paddingLeft: "10px",
         }}
       >
         <Menu positioning={{ autoSize: true }}>
